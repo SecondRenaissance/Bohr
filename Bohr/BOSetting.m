@@ -37,6 +37,7 @@
 - (void)setValue:(id)value {
 	if (self.value != value) {
 		[[NSUserDefaults standardUserDefaults] setObject:value forKey:self.key];
+        _valueDidChangeBlock();
 	}
 }
 
