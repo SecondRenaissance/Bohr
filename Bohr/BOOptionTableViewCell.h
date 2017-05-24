@@ -14,6 +14,6 @@
 @property (nonatomic) NSString *footerTitle;
 
 /// Setting value when this cell gets selected - cell's row index by default
-@property (nonatomic) id settingsValue;
+@property (nonatomic) NSInteger settingsValue;
 
 @end

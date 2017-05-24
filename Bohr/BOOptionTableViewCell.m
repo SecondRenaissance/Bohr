@@ -20,31 +20,28 @@
 @synthesize settingsValue = _settingsValue;
 
 - (void)setup {
+	self.settingsValue = NSIntegerMin;
 	self.selectionStyle = UITableViewCellSelectionStyleDefault;
 }
 
-- (void)setSettingsValue:(id)settingsValue
+- (void)setSettingsValue:(NSInteger)settingsValue
 {
 	_settingsValue = settingsValue;
 }
 
-- (id)settingsValue
+- (NSInteger)settingsValue
 {
-	if (_settingsValue)
-	{
-		return _settingsValue;
-	}
-	return [NSNumber numberWithInteger:self.indexPath.row];
+	return _settingsValue != NSIntegerMin ? _settingsValue : self.indexPath.row;;
 }
 
 - (void)wasSelectedFromViewController:(BOTableViewController *)viewController
 {
-    self.setting.value = self.settingsValue;
+    self.setting.value = @(self.settingsValue);
 }
 
 - (void)settingValueDidChange
 {
-    BOOL isSelected = (self.setting.value == self.settingsValue);
+    BOOL isSelected = ([self.setting.value integerValue] == self.settingsValue);
 	self.accessoryType = isSelected ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 }
 
