@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "Bohr"
-  s.version               = "3.0.1"
+  s.version               = "3.0.2"
   s.summary               = "Settings screen composing framework"
   s.homepage              = "https://github.com/DavdRoman/Bohr"
   s.author                = { "David Román" => "d@vidroman.me" }

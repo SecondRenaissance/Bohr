@@ -17,6 +17,9 @@
 /// The setup method for the controller.
 - (void)setup;
 
+/// Remove All setup
+- (void)clear;
+
 /// Adds a new section to the controller.
 - (void)addSection:(BOTableViewSection *)section;
 

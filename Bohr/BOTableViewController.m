@@ -37,6 +37,12 @@
 	[self setup];
 }
 
+- (void)clear
+{
+    self.sections = [NSArray new];
+    self.tableView.tableFooterView = [UIView new];
+}
+
 - (instancetype)initWithStyle:(UITableViewStyle)style {
 	if (self = [super initWithStyle:style]) {
 		[self commonInit];
