@@ -20,6 +20,8 @@
 /// Remove All setup
 - (void)clear;
 
+- (void)reloadTableView;
+
 /// Adds a new section to the controller.
 - (void)addSection:(BOTableViewSection *)section;
 
