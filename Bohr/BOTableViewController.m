@@ -43,6 +43,13 @@
     self.tableView.tableFooterView = [UIView new];
 }
 
+- (void)reload
+{
+    [self clear];
+    [self setup];
+    [self reloadTableView];
+}
+
 - (instancetype)initWithStyle:(UITableViewStyle)style {
 	if (self = [super initWithStyle:style]) {
 		[self commonInit];
