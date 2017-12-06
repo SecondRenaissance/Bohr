@@ -23,8 +23,6 @@
 
 - (void)updateAppearance
 {
-    [super updateAppearance];
-    self.textLabel.textColor = self.mainColor;
 }
 
 @end

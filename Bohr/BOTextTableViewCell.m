@@ -23,7 +23,8 @@
 	self.accessoryView = self.textField;
 }
 
-- (void)updateAppearance {
+- (void)updateAppearance
+{
 	self.textField.textColor = self.secondaryColor;
 	self.textField.tintColor = self.secondaryColor;
 	

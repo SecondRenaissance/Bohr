@@ -104,8 +104,9 @@
 
 - (void)setup {}
 - (void)setupConstraints {}
-- (void)updateAppearance {
-    [self _updateAppearance];
+- (void)updateAppearance
+{
+    
 }
 - (CGFloat)expansionHeight {return self.expansionView.intrinsicContentSize.height;}
 - (CGFloat)overrideHeight {return  -1.0f;}

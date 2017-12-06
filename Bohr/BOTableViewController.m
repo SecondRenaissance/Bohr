@@ -50,6 +50,20 @@
     [self reloadTableView];
 }
 
+- (void)updateAppearance
+{
+    for (BOTableViewSection *section in self.sections) {
+        for (BOTableViewCell *cell in [section cells])
+        {
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^(void)
+             {
+                 [cell _updateAppearance];
+                 [cell updateAppearance];
+             }];
+        }
+    }
+}
+
 - (instancetype)initWithStyle:(UITableViewStyle)style {
 	if (self = [super initWithStyle:style]) {
 		[self commonInit];
