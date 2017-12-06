@@ -35,6 +35,9 @@
 /// The color for the selected state of the cell.
 @property (nonatomic) UIColor *selectedColor UI_APPEARANCE_SELECTOR;
 
+/// The color for the bg.
+@property (nonatomic) UIColor *mainBackgroundColor UI_APPEARANCE_SELECTOR;
+
 /// An optional destination view controller to push when the cell is pressed.
 @property (nonatomic) UIViewController *destinationViewController;
 
@@ -43,6 +46,7 @@
 
 /// A block determining whether the cell should be visible or not.
 @property (nonatomic, copy) BOOL (^visibilityBlock)(id settingValue);
+
 
 /** Initializes a new BOTableViewCell object.
  *

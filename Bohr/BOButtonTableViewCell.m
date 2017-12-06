@@ -21,4 +21,10 @@
 	if (self.actionBlock) self.actionBlock();
 }
 
+- (void)updateAppearance
+{
+    [super updateAppearance];
+    self.textLabel.textColor = self.mainColor;
+}
+
 @end

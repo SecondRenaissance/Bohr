@@ -96,13 +96,17 @@
 	
 	self.selectedBackgroundView = [UIView new];
 	self.selectedBackgroundView.backgroundColor = self.selectedColor;
+    
+    self.backgroundColor = self.mainBackgroundColor;
 }
 
 #pragma mark Subclassing
 
 - (void)setup {}
 - (void)setupConstraints {}
-- (void)updateAppearance {}
+- (void)updateAppearance {
+    [self _updateAppearance];
+}
 - (CGFloat)expansionHeight {return self.expansionView.intrinsicContentSize.height;}
 - (CGFloat)overrideHeight {return  -1.0f;}
 - (NSString *)footerTitle {return nil;}
