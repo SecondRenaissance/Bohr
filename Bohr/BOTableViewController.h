@@ -22,6 +22,8 @@
 
 - (void)reload;
 
+- (void)updateAppearance;
+
 /// Adds a new section to the controller.
 - (void)addSection:(BOTableViewSection *)section;
 
