@@ -45,9 +45,17 @@
 
 - (void)reload
 {
+    //    NSRange range = NSMakeRange(0, [self numberOfSectionsInTableView:self.tableView]);
+    //    NSIndexSet *sections = [NSIndexSet indexSetWithIndexesInRange:range];
+    //    [self.tableView reloadSections:sections withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    //    [self.tableView reloadData];
+    //    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+    
     [self clear];
     [self setup];
     [self reloadTableView];
+    
 }
 
 - (instancetype)initWithStyle:(UITableViewStyle)style {
