@@ -35,6 +35,9 @@
 /// The color for the selected state of the cell.
 @property (nonatomic) UIColor *selectedColor UI_APPEARANCE_SELECTOR;
 
+/// The color for the selected state of the cell.
+@property (nonatomic) UIColor *placeholderColor UI_APPEARANCE_SELECTOR;
+
 /// The color for the bg.
 @property (nonatomic) UIColor *mainBackgroundColor UI_APPEARANCE_SELECTOR;
 
