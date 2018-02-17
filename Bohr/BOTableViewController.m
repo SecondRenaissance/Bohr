@@ -60,12 +60,6 @@
 
 - (void)updateAppearance
 {
-//    for (UIWindow *window in [UIApplication sharedApplication].windows) {
-//        for (UIView *view in window.subviews) {
-//            [view removeFromSuperview];
-//            [window addSubview:view];
-//        }
-//    }
     for (BOTableViewSection *section in self.sections) {
         for (BOTableViewCell *cell in [section cells])
         {
